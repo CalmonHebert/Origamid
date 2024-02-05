@@ -15,3 +15,4 @@ comidaFavorita = 'Pizza'
 // Declarar 5 variáveis diferentes sem valores
 let time, banda, sobrenome, musica, bebidaFavorita;
 
+console.log(nome, idade, comidaFavorita);
