@@ -31,3 +31,44 @@ function corFavorita(cor) {
 }
 
 corFavorita('verdes')
+
+addEventListener('click', function () {
+    console.log('oi');
+})
+
+function terceiraIdade(idade) {
+    if (typeof idade != 'number') {
+        return 'Por favor preencha um número'
+    } else if (idade > 60) {
+        return true
+    } else {
+        return false
+    }
+}
+console.log(terceiraIdade(30));
+
+function faltaVisitar(paisesVisitados) {
+    var totalPaises = 193
+    return `Falta visitar ${totalPaises - paisesVisitados} países`
+}
+
+console.log(faltaVisitar(20));
+
+var profissao = 'Designer'
+
+function dados() {
+    var nome = 'André';
+    var idade = 28;
+    function outrosDados() {
+        var endereco = 'Rio de Janeiro';
+        var idade = 29;
+        return `${nome}, ${idade}, ${endereco}, ${profissao}`
+    }
+    return outrosDados()
+}
+
+console.log(dados());
+
+
+
+
