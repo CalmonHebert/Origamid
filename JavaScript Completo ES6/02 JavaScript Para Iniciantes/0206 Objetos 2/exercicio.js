@@ -3,16 +3,15 @@
 // Deve possui pelo menos duas propriedades nome e sobrenome
 
 // Crie um método no objeto anterior, que mostre o seu nome completo
-
-nomeCompleto() {
-  return this.nome + ' ' + this.sobrenome
-}
-
 var dados = {
   nome: 'Calmon',
   sobrenome: 'Hebert',
   cidade: 'Paulo Afonso',
+  nomeCompleto() {
+    return this.nome + ' ' + this.sobrenome
+  }
 }
+
 console.log(dados.nomeCompleto());
 
 // Modifique o valor da propriedade preco para 3000
