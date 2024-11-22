@@ -7,12 +7,12 @@ var dados = {
   nome: 'Calmon',
   sobrenome: 'Hebert',
   cidade: 'Paulo Afonso',
-  nomeCompleto() {
-    return this.nome + ' ' + this.sobrenome
-  }
 }
 
-console.log(dados.nomeCompleto());
+dados.nomeCompleto = function () {
+  return this.nome + ' ' + this.sobrenome
+}
+
 
 // Modifique o valor da propriedade preco para 3000
 var carro = {
@@ -25,8 +25,15 @@ console.log(carro.preco);
 
 // Crie um objeto de um cachorro que represente um labrador,
 // preto com 10 anos, que late ao ver um homem
-let labrador = {
+let cachorro = {
+  raça: 'labrador',
   cor: 'preto',
   idade: 10,
-  lateAoVerHomem: true,
+  latir(pessoa) {
+    if (pessoa === 'homem') {
+      return 'Latir'
+    } else {
+      return 'Nada'
+    }
+  }
 }
